@@ -1,0 +1,115 @@
+<?php
+
+/******************************************
+Asisten Pemrogaman 11 
+ ******************************************/
+
+class Pasien
+{
+	var $id = ''; //id Pasien
+	var $nik = '';
+	var $nama = '';
+	var $tempat = '';
+	var $tl = '';
+	var $gender = '';
+	var $email = '';
+	var $telp = '';
+
+	function Pasien($id = '', $nik = '', $nama = '', $tempat = '', $tl = '', $gender = '', $email = '', $telp = '')
+	{
+		$this->id = $id;
+		$this->nik = $nik;
+		$this->nama = $nama;
+		$this->tempat = $tempat;
+		$this->tl = $tl;
+		$this->gender = $gender;
+		$this->email = $email;
+		$this->telp = $telp;
+	}
+
+	function setId($id)
+	{
+		$this->id = $id;
+	}
+	function setNik($nik)
+	{
+		$this->nik = $nik;
+	}
+	function setNama($nama)
+	{
+		$this->nama = $nama;
+	}
+	function setTempat($tempat)
+	{
+		$this->tempat = $tempat;
+	}
+	function setTl($tl)
+	{
+		$this->tl = $tl;
+	}
+	function setGender($gender)
+	{
+		$this->gender = $gender;
+	}
+
+	function getId()
+	{
+		return $this->id;
+	}
+	function getNik()
+	{
+		return $this->nik;
+	}
+	function getNama()
+	{
+		return $this->nama;
+	}
+	function getTempat()
+	{
+		return $this->tempat;
+	}
+	function getTl()
+	{
+		return $this->tl;
+	}
+	function getGender()
+	{
+		return $this->gender;
+	}
+
+	/**
+	 * Get the value of email
+	 */
+	public function getEmail()
+	{
+		return $this->email;
+	}
+
+	/**
+	 * Set the value of email
+	 *
+	 *
+	 */
+	public function setEmail($email)
+	{
+		$this->email = $email;
+	}
+
+	/**
+	 * Get the value of telp
+	 */
+	public function getTelp()
+	{
+		return $this->telp;
+	}
+
+	/**
+	 * Set the value of telp
+	 *
+	 *
+	 */
+	public function setTelp($telp)
+	{
+		$this->telp = $telp;
+	}
+}
